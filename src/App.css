@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  max-width: 50%;
+  height: 50%;
+  margin: auto;
+  padding: 2rem;
+  box-shadow: inset 3px 3px 5px rgb(90, 79, 79), inset -3px -3px 7px #f1e2e2;
+  border-radius: 1em;
+}
+
+.input-field {
+  border: none;
+  padding: 0.6em 1.2em;
+  box-shadow: inset 3px 3px 5px rgb(90, 79, 79), inset -3px -3px 7px #f1e2e2;
+  border-radius: 1em;
+}
+img {
+  /* border: 1px solid black; */
+  width: 50px;
+}
+
+@media screen and (min-width: 230px) and (max-width: 30px) {
+  .search {
+    max-width: 50%;
+    margin: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .input-field {
+    placehoder: "City";
+    max-width: 90%;
+    /* margin: auto; */
+    font-size: small;
+  }
+  .App h1 {
+    font-size: 1.5em;
+    line-height: 0.6;
+  }
+}
